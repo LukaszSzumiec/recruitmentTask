@@ -26,5 +26,5 @@ def create_customer():
 
 
 mock = [create_customer() for x in range(10_000)]
-with open('../gen_data.json', 'w') as out:
+with open('gen_data.json', 'w') as out:
     json.dump(mock, out)
