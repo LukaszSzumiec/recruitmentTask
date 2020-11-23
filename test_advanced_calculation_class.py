@@ -5,7 +5,7 @@ import pathlib
 
 class TestAdvancedCalculationClass(TestCase):
 
-    def setUp(self) -> None:
+    def setUp(self) -> None:    
         path = pathlib.Path('data.json')
         calculation_class = AdvancedCalculationClass()
         calculation_class.load(path)
